@@ -22,12 +22,14 @@ public class ViceburgerTabs {
                         .displayName(Text.literal("ViceBurger"))
                         .icon(() -> new ItemStack(ViceburgerBlocks.HAPPYMEAL))
                         .entries((context, entries) -> {
+                            // Bloque principal
                             entries.add(ViceburgerBlocks.HAPPYMEAL);
-                            entries.add(ViceburgerItems.ABEJA);
-                            entries.add(ViceburgerItems.CHANEKE);
-                            entries.add(ViceburgerItems.HUEVO);
-                            entries.add(ViceburgerItems.RANA);
-                            entries.add(ViceburgerItems.TANI);
+                            // Ahora tus juguetes como bloques:
+                            entries.add(ViceburgerBlocks.ABEJA_BLOCK);
+                            entries.add(ViceburgerBlocks.CHANEKE_BLOCK);
+                            entries.add(ViceburgerBlocks.HUEVO_BLOCK);
+                            entries.add(ViceburgerBlocks.RANA_BLOCK);
+                            entries.add(ViceburgerBlocks.TANI_BLOCK);
                         })
                         .build()
         );

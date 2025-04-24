@@ -8,10 +8,14 @@ import net.minecraft.client.render.RenderLayer;
 public class ViceburgerClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
-        // Registra tu bloque "happymeal" para que use el canal translucent
-        BlockRenderLayerMap.INSTANCE.putBlock(
-                ViceburgerBlocks.HAPPYMEAL,
-                RenderLayer.getCutout()
-        );
+        // Usa blending real para transparencias suaves
+        BlockRenderLayerMap.INSTANCE.putBlock(ViceburgerBlocks.HAPPYMEAL, RenderLayer.getCutout());
+
+        // Si agregaste bloques para los juguetes, regístralos también
+        BlockRenderLayerMap.INSTANCE.putBlock(ViceburgerBlocks.ABEJA_BLOCK,   RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ViceburgerBlocks.CHANEKE_BLOCK, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ViceburgerBlocks.HUEVO_BLOCK,   RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ViceburgerBlocks.RANA_BLOCK,    RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ViceburgerBlocks.TANI_BLOCK,    RenderLayer.getCutout());
     }
 }
