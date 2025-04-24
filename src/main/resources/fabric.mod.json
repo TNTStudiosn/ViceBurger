@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "viceburger",
+  "version": "${version}",
+  "name": "ViceBurger",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/viceburger/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "com.TNTStudios.viceburger.client.ViceburgerDataGenerator"
+    ],
+    "client": [
+      "com.TNTStudios.viceburger.client.ViceburgerClient"
+    ],
+    "main": [
+      "com.TNTStudios.viceburger.Viceburger"
+    ]
+  },
+  "mixins": [
+    "viceburger.mixins.json",
+    {
+      "config": "viceburger.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
