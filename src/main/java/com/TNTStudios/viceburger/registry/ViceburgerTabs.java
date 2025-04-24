@@ -1,5 +1,6 @@
 package com.TNTStudios.viceburger.registry;
 
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
@@ -16,18 +17,19 @@ public class ViceburgerTabs {
     );
 
     public static void register() {
-        Registry.register(Registries.ITEM_GROUP, VICEBURGER_TAB, ItemGroup.builder()
-                .displayName(Text.literal("ViceBurger"))
-                .icon(() -> new ItemStack(ViceburgerBlocks.HAPPYMEAL))
-                .entries((context, entries) -> {
-                    entries.add(ViceburgerBlocks.HAPPYMEAL);
-                    entries.add(ViceburgerItems.ABEJA);
-                    entries.add(ViceburgerItems.CHANEKE);
-                    entries.add(ViceburgerItems.HUEVO);
-                    entries.add(ViceburgerItems.RANA);
-                    entries.add(ViceburgerItems.TANI);
-                })
-                .build()
+        Registry.register(Registries.ITEM_GROUP, VICEBURGER_TAB,
+                FabricItemGroup.builder()
+                        .displayName(Text.literal("ViceBurger"))
+                        .icon(() -> new ItemStack(ViceburgerBlocks.HAPPYMEAL))
+                        .entries((context, entries) -> {
+                            entries.add(ViceburgerBlocks.HAPPYMEAL);
+                            entries.add(ViceburgerItems.ABEJA);
+                            entries.add(ViceburgerItems.CHANEKE);
+                            entries.add(ViceburgerItems.HUEVO);
+                            entries.add(ViceburgerItems.RANA);
+                            entries.add(ViceburgerItems.TANI);
+                        })
+                        .build()
         );
     }
 }

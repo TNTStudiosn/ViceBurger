@@ -2,7 +2,6 @@ package com.TNTStudios.viceburger.registry;
 
 import com.TNTStudios.viceburger.blocks.HappyMealBlock;
 import net.minecraft.block.Block;
-import net.minecraft.block.Material;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -13,7 +12,7 @@ import net.minecraft.util.Identifier;
 public class ViceburgerBlocks {
 
     public static final Block HAPPYMEAL = register("happymeal", new HappyMealBlock(
-            AbstractBlock.Settings.of(Material.WOOD).strength(0.5f).nonOpaque()
+            AbstractBlock.Settings.create().strength(0.5f).nonOpaque()
     ));
 
     public static void registerAll() {
