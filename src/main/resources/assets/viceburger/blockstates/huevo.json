@@ -1,5 +1,8 @@
 {
   "variants": {
-    "": { "model": "viceburger:block/huevo" }
+    "facing=north": { "model": "viceburger:block/huevo", "y": 180 },
+    "facing=south": { "model": "viceburger:block/huevo", "y": 0 },
+    "facing=west":  { "model": "viceburger:block/huevo", "y": 90 },
+    "facing=east":  { "model": "viceburger:block/huevo", "y": 270 }
   }
 }

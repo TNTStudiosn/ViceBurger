@@ -1,5 +1,8 @@
 {
   "variants": {
-    "": { "model": "viceburger:block/happymeal" }
+    "facing=north": { "model": "viceburger:block/happymeal", "y": 180 },
+    "facing=south": { "model": "viceburger:block/happymeal", "y": 0 },
+    "facing=west":  { "model": "viceburger:block/happymeal", "y": 90 },
+    "facing=east":  { "model": "viceburger:block/happymeal", "y": 270 }
   }
 }

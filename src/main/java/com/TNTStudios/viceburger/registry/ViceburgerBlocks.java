@@ -1,5 +1,7 @@
 package com.TNTStudios.viceburger.registry;
 
+import com.TNTStudios.viceburger.blocks.AbejaBlock;
+import com.TNTStudios.viceburger.blocks.FacingXBlock;
 import com.TNTStudios.viceburger.blocks.HappyMealBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.AbstractBlock;
@@ -16,22 +18,23 @@ public class ViceburgerBlocks {
             new HappyMealBlock(AbstractBlock.Settings.create().strength(0.5f).nonOpaque())
     );
 
-    // Ahora agregamos un bloque por cada juguete
-    public static final Block ABEJA_BLOCK   = register("abeja",
-            new Block(AbstractBlock.Settings.create().strength(0.2f).nonOpaque())
+    public static final Block ABEJA_BLOCK = register("abeja",
+            new AbejaBlock(AbstractBlock.Settings.create().strength(0.2f).nonOpaque())
     );
+
     public static final Block CHANEKE_BLOCK = register("chaneke",
-            new Block(AbstractBlock.Settings.create().strength(0.2f).nonOpaque())
+            new FacingXBlock(AbstractBlock.Settings.create().strength(0.2f).nonOpaque())
     );
-    public static final Block HUEVO_BLOCK   = register("huevo",
-            new Block(AbstractBlock.Settings.create().strength(0.2f).nonOpaque())
+    public static final Block HUEVO_BLOCK = register("huevo",
+            new FacingXBlock(AbstractBlock.Settings.create().strength(0.2f).nonOpaque())
     );
-    public static final Block RANA_BLOCK    = register("rana",
-            new Block(AbstractBlock.Settings.create().strength(0.2f).nonOpaque())
+    public static final Block RANA_BLOCK = register("rana",
+            new FacingXBlock(AbstractBlock.Settings.create().strength(0.2f).nonOpaque())
     );
-    public static final Block TANI_BLOCK    = register("tani",
-            new Block(AbstractBlock.Settings.create().strength(0.2f).nonOpaque())
+    public static final Block TANI_BLOCK = register("tani",
+            new FacingXBlock(AbstractBlock.Settings.create().strength(0.2f).nonOpaque())
     );
+
 
     public static void registerAll() {
         // Con esto basta para forzar la carga de la clase y que se ejecuten los statics

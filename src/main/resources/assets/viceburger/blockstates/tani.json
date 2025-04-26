@@ -1,5 +1,8 @@
 {
   "variants": {
-    "": { "model": "viceburger:block/tani" }
+    "facing=north": { "model": "viceburger:block/tani", "y": 180 },
+    "facing=south": { "model": "viceburger:block/tani", "y": 0 },
+    "facing=west":  { "model": "viceburger:block/tani", "y": 90 },
+    "facing=east":  { "model": "viceburger:block/tani", "y": 270 }
   }
 }

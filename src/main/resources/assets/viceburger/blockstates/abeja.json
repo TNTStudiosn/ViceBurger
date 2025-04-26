@@ -1,5 +1,9 @@
 {
   "variants": {
-    "": { "model": "viceburger:block/abeja" }
+    "facing=north": { "model": "viceburger:block/abeja", "y": 180 },
+    "facing=south": { "model": "viceburger:block/abeja", "y": 0 },
+    "facing=west":  { "model": "viceburger:block/abeja", "y": 90 },
+    "facing=east":  { "model": "viceburger:block/abeja", "y": 270 }
   }
 }
+

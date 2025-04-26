@@ -1,5 +1,8 @@
 {
   "variants": {
-    "": { "model": "viceburger:block/chaneke" }
+    "facing=north": { "model": "viceburger:block/chaneke", "y": 180 },
+    "facing=south": { "model": "viceburger:block/chaneke", "y": 0 },
+    "facing=west":  { "model": "viceburger:block/chaneke", "y": 90 },
+    "facing=east":  { "model": "viceburger:block/chaneke", "y": 270 }
   }
 }

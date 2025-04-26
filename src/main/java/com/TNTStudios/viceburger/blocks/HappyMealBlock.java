@@ -19,7 +19,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 
-public class HappyMealBlock extends Block {
+public class HappyMealBlock extends FacingXBlock {
     public HappyMealBlock(Settings settings) {
         super(settings);
     }

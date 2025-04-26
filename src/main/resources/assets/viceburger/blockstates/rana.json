@@ -1,5 +1,8 @@
 {
   "variants": {
-    "": { "model": "viceburger:block/rana" }
+    "facing=north": { "model": "viceburger:block/rana", "y": 180 },
+    "facing=south": { "model": "viceburger:block/rana", "y": 0 },
+    "facing=west":  { "model": "viceburger:block/rana", "y": 90 },
+    "facing=east":  { "model": "viceburger:block/rana", "y": 270 }
   }
 }
