@@ -51,11 +51,11 @@ public class ToyConfig {
 
     private static void saveDefault() {
         toyChances.clear();
-        toyChances.put("viceburger:abeja", 0.2);
-        toyChances.put("viceburger:chaneke", 0.3);
-        toyChances.put("viceburger:huevo", 0.15);
-        toyChances.put("viceburger:rana", 0.2);
-        toyChances.put("viceburger:tani", 0.15);
+        toyChances.put("viceburger:abeja", 0.78);
+        toyChances.put("viceburger:chaneke", 0.105);
+        toyChances.put("viceburger:rana", 0.105);
+        toyChances.put("viceburger:huevo", 0.005);
+        toyChances.put("viceburger:tani", 0.005);
 
         try (FileWriter writer = new FileWriter(CONFIG_FILE)) {
             GSON.toJson(toyChances, writer);
@@ -65,6 +65,8 @@ public class ToyConfig {
 
         rebuildWeightedList();
     }
+
+
 
     private static void rebuildWeightedList() {
         weightedList.clear();
