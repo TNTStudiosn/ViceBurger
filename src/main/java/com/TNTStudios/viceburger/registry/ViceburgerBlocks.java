@@ -1,8 +1,6 @@
 package com.TNTStudios.viceburger.registry;
 
-import com.TNTStudios.viceburger.blocks.AbejaBlock;
-import com.TNTStudios.viceburger.blocks.FacingXBlock;
-import com.TNTStudios.viceburger.blocks.HappyMealBlock;
+import com.TNTStudios.viceburger.blocks.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.item.BlockItem;
@@ -23,16 +21,16 @@ public class ViceburgerBlocks {
     );
 
     public static final Block CHANEKE_BLOCK = register("chaneke",
-            new FacingXBlock(AbstractBlock.Settings.create().strength(0.2f).nonOpaque())
+            new ChanekeBlock(AbstractBlock.Settings.create().strength(0.2f).nonOpaque())
     );
     public static final Block HUEVO_BLOCK = register("huevo",
-            new FacingXBlock(AbstractBlock.Settings.create().strength(0.2f).nonOpaque())
+            new HuevoBlock(AbstractBlock.Settings.create().strength(0.2f).nonOpaque())
     );
     public static final Block RANA_BLOCK = register("rana",
-            new FacingXBlock(AbstractBlock.Settings.create().strength(0.2f).nonOpaque())
+            new RanaBlock(AbstractBlock.Settings.create().strength(0.2f).nonOpaque())
     );
     public static final Block TANI_BLOCK = register("tani",
-            new FacingXBlock(AbstractBlock.Settings.create().strength(0.2f).nonOpaque())
+            new TaniBlock(AbstractBlock.Settings.create().strength(0.2f).nonOpaque())
     );
 
 
